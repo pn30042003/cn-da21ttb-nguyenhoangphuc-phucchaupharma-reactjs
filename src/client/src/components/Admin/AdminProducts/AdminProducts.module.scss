@@ -1,0 +1,168 @@
+.admin-order {
+  // background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  // background-image: linear-gradient(-225deg, #e6fdf6 0%, #ffeefc 100%);
+  // background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+//.title-page
+.title-page {
+  font-size: 20px;
+  color: var(--black-color);
+  font-weight: 500;
+}
+//admin-header
+.admin-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.admin-header-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.name-admin {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+  margin-right: 8px;
+}
+.img-admin {
+  border-radius: 50%;
+  width: 40px;
+  width: 40px;
+}
+
+//product
+.title-product-container {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  //   border-left: 1px solid #ccc;
+  //   border-right: 1px solid #ccc;
+  // border-top: 1px solid #ccc;
+  // border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+.product-item {
+  //   padding: 8px 8px;
+  max-height: 100px;
+  margin-top: 15px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.product-img {
+  height: 60px;
+  width: 60px;
+}
+.icon-product-handle-div {
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+  border:  none;
+  background-color: transparent;
+}
+.icon-product-handle {
+  width: 20px;
+  height: 20px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+//css chung
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//Phân trang
+//page
+.page-container {
+  display: flex;
+  align-items: center;
+}
+.page-item {
+  
+  font-size: 16px;
+  color: var(--black-color);
+  padding: 4px 8px;
+  // background-color: var(--white-color);
+  border: 1px solid var(--text-color-gray);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.page-item.page-active {
+  color: #ccc;
+}
+
+//Phân trang
+.page-container {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagination {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.pagination-item {
+}
+.pagination-item-a {
+  align-items: center;
+  color: var(--black-color);
+  cursor: pointer;
+  display: flex;
+  //   padding: 4px 6px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  user-select: none;
+}
+.pagination-item-a.active {
+  background-color: #ececec;
+  border-radius: 50%;
+}
+.pagination-sub {
+}
+//btn-add-container
+.btn-add-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.btn-add-product {
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* From https://css.glass */
+  // background: var(--white-color);
+  background: #43a048;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn-add-product span {
+  color: var(--white-color);
+}
+.icon-add-product {
+  transform: translateY(4px);
+  margin-right: 4px;
+}

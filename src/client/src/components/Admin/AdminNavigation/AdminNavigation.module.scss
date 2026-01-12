@@ -1,0 +1,104 @@
+.container-dashboard {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  left: -4px;
+  // transform: translateX(-4px);
+  top: 0;
+  // background-image: linear-gradient(to right, #dfe9f3 0%, #eff4fe 100%);
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.grid-dashboard {
+  /* From https://css.glass */
+  // background: rgba(255, 255, 255, 0.2);
+  // border-radius: 16px;
+  // backdrop-filter: blur(5px);
+  // -webkit-backdrop-filter: blur(5px);
+  // border: 1px solid rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 16px;
+  background-color: var(--black-color);
+  // max-width: 100%;
+}
+.dashboard {
+  // background-color: ;
+}
+.brand-title {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+.brand-title-link {
+  color: var(--white-color);
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &:hover h2{
+    opacity: 0.8;
+  }
+}
+.nav-item.nav-active h2 {
+  opacity: 0.8;
+} 
+.nav-item.nav-active {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: -28px;
+    width: 8px;
+    height: calc(100% + 12px);
+    background-color: var(--white-color);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+}
+.nav-item-icon {
+  font-size: 22px;
+  fill: var(--white-color);
+}
+.nav-item-title {
+  margin: 0 0 0 8px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+//logout-btn
+.logout-btn-div {
+  padding: 0 !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // border-top: 1px solid #ccc;
+  // border-top: 1px solid #ccc;
+}
+.logout-btn {
+  width: 100%;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: var(--black-color);
+  &:hover {
+    opacity: 0.8;
+  }
+}

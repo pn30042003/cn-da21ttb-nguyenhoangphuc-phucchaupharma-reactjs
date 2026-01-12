@@ -1,0 +1,68 @@
+//admin-header
+.admin-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.admin-header-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.name-admin {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+  margin-right: 8px;
+}
+.img-admin {
+  border-radius: 50%;
+  width: 40px;
+  width: 40px;
+}
+//
+.title-page {
+  font-size: 20px;
+  color: var(--black-color);
+  font-weight: 500;
+}
+.overview-container {
+  display: flex;
+  padding: 16px;
+  border-radius: 8px;
+  // background-color: #e6eeed;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.overview-inner {
+  margin-left: 16px;
+}
+.overview-inner-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-gray);
+}
+.overview-inner-number {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--blue-color);
+}
+.overview-icon {
+  font-size: 50px;
+}
+//chart
+.chart {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  min-height: 500px;
+}

@@ -1,0 +1,30 @@
+# Sử dụng một hình ảnh chính thức của Node runtime làm hình ảnh cha
+FROM node:14
+
+# Thiết lập thư mục làm việc tới /app
+WORKDIR /app
+
+# Sao chép package.json và package-lock.json vào thư mục làm việc
+COPY package*.json ./
+
+# Cài đặt các gói cần thiết được chỉ định trong package.json
+RUN npm install
+
+# Sao chép phần còn lại của mã ứng dụng vào thư mục làm việc
+COPY . .
+
+# Thiết lập biến môi trường
+ENV LOCAL_HOST=host.docker.internal
+ENV DB_HOST=$LOCAL_HOST
+ENV DB_PORT=3306
+ENV DB_USER=root
+ENV DB_PASSWORD=thewings21092003
+ENV DB_DATABASE=sneakerstore
+ENV BASE_URL=$LOCAL_HOST:${PORT_URL:-3001} 
+ENV REACT_CORS=$LOCAL_HOST:${PORT_CORS:-3000}
+
+# Mở cổng 3001 cho bên ngoài container
+EXPOSE 3001
+
+# Chạy ứng dụng khi container khởi động
+CMD ["npm", "start"]

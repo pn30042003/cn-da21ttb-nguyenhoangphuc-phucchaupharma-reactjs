@@ -1,0 +1,27 @@
+.grid-container {
+  margin-top: 110px;
+}
+//map
+.map {
+  border: 0;
+  width: 500px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+}
+//content
+.title {
+  padding: 12px 0;
+  color: var(--black-color-1);
+  font-weight: 600;
+  font-size: 18px;
+}
+.text-des {
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.size-chart-img {
+  max-height: 100%;
+  max-width: 100%;
+}
